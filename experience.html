@@ -5,33 +5,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Work Experience - Amelia Zacharska</title>
 <style>
-:root { --pink-bg: #faf6f8; --pink-strong: #d57baa; --text-dark: #5a4a52; --card-bg: #ffffff; --shadow: 0 8px 20px rgba(0,0,0,0.05);}
-body { margin:0; font-family: Arial, sans-serif; background: var(--pink-bg); color: var(--text-dark); line-height:1.7;}
-header { text-align:center; padding:70px 20px;}
-header h1 { font-size:2.8rem; margin:0; color: var(--pink-strong);}
-header p { margin-top:12px; font-size:1.15rem; color:#7b6d74;}
-.container { max-width:850px; margin:0 auto; padding:20px;}
-section { background: var(--card-bg); padding:30px; border-radius:20px; margin-bottom:30px; box-shadow: var(--shadow); border:1px solid #f2dbe7;}
-h2 { margin-top:0; font-size:1.4rem; color: var(--pink-strong); font-weight:600; letter-spacing:0.3px; padding-bottom:10px; border-bottom:1px solid #f2dbe7;}
-a { color: var(--pink-strong); text-decoration:none; font-weight:600;}
-a:hover { text-decoration: underline;}
-footer { text-align:center; padding:35px; font-size:0.9rem; color:#7b6d74; letter-spacing:0.3px;}
+:root {
+  --pink-bg: #faf6f8;
+  --pink-strong: #d57baa;
+  --text-dark: #5a4a52;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 20px rgba(0,0,0,0.05);
+  --button-bg: #f9c7e1;
+  --button-hover: #e7a7c5;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--pink-bg);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: var(--pink-strong);
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.section-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  width: 90%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.button {
+  background: var(--button-bg);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s, background 0.3s;
+}
+.button:hover {
+  background: var(--button-hover);
+  transform: translateY(-3px);
+}
 </style>
 </head>
 <body>
-<header>
-  <h1>Amelia Zacharska</h1>
-  <p>Work Experience</p>
-</header>
-<div class="container">
-  <section>
-    <h2>Work Experience</h2>
-    <p>No formal work experience yet — but I have completed several coding projects and school assignments demonstrating initiative and problem-solving skills.</p>
-  </section>
-  <section>
-    <a href="index.html" style="color: var(--pink-strong); text-decoration: underline;">← Back to Home</a>
-  </section>
+
+<h1>Work Experience</h1>
+
+<div class="section-card">
+  <h2>Experience</h2>
+  <p>No formal work experience yet, but I have completed several coding projects, school assignments, and self-led learning that demonstrate initiative, problem-solving skills, and a strong work ethic.</p>
 </div>
-<footer>© 2025 Amelia Zacharska — Portfolio</footer>
+
+<a href="index.html" class="button">← Back to Home</a>
+
 </body>
 </html>
