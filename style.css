@@ -17,34 +17,42 @@ body {
 /* Gradient Header */
 .top-gradient {
     width: 100%;
-    height: 220px; /* taller so nav is visible */
+    height: 250px; /* taller to comfortably fit nav */
     background-image: url("gradient.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;   /* vertically centers nav */
-    justify-content: center; 
+    align-items: center;   /* centers nav vertically */
+    justify-content: center; /* centers nav horizontally */
     position: relative;
 }
 
 /* Top navigation links */
 .top-nav {
     display: flex;
-    gap: 60px;  /* increased from 40px to 60px for more spacing */
-    flex-wrap: wrap;   /* allows wrapping on small screens */
-    justify-content: center; /* keeps links centered */
+    gap: 80px;  /* bigger horizontal spacing */
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .top-nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem; /* keeps font larger and readable */
-    transition: 0.2s;  /* fixed syntax */
+    font-size: 1.5rem;
+    transition: 0.2s;
 }
 
 .top-nav a:hover {
     text-decoration: underline;
+}
+
+/* Responsive for mobile */
+@media(max-width:700px){
+    .top-nav{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* Profile Card */
