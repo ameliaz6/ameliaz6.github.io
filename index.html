@@ -25,13 +25,13 @@ body {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  position: relative; /* for headshot positioning */
+  position: relative;
 }
 
 /* Headshot in top-right corner */
 .headshot {
-  width: 100px;
-  height: 100px;
+  width: 120px;            /* default size */
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
@@ -41,6 +41,7 @@ body {
   box-shadow: var(--shadow);
 }
 
+/* Text */
 h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -52,6 +53,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Buttons */
 .button-group {
   display: flex;
   gap: 20px;
@@ -79,11 +81,11 @@ p {
   transform: translateY(-3px);
 }
 
-/* Responsive headshot for smaller screens */
+/* Responsive */
 @media (max-width: 500px) {
   .headshot {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
   h1 {
     font-size: 2rem;
@@ -101,6 +103,7 @@ p {
 <body>
 
 <!-- Headshot image -->
+<!-- Make sure your image is named exactly headshot.jpg and placed in the same folder, OR adjust src if in a subfolder -->
 <img src="headshot.jpg" alt="Amelia Zacharska" class="headshot">
 
 <h1>Amelia Zacharska</h1>
