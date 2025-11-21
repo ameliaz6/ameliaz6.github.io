@@ -1,89 +1,88 @@
 <!DOCTYPE html>
-}
-
-
-ul {
-list-style: none;
-padding: 0;
-}
-
-
-ul li {
-background: #eee;
-padding: 10px 15px;
-margin-bottom: 8px;
-border-radius: 8px;
-font-size: 1.1rem;
-}
-
-
-a {
-color: #0066cc;
-text-decoration: none;
-}
-
-
-a:hover {
-text-decoration: underline;
-}
-
-
-footer {
-text-align: center;
-padding: 20px;
-color: #555;
-font-size: 0.9rem;
-}
+.muted{color:var(--muted)}
+.label{font-size:0.85rem;color:var(--muted);margin-bottom:6px;display:block}
 </style>
 </head>
-
-
 <body>
 <header>
-<h1>Your Name</h1>
-<p>Aspiring Software Engineer Apprentice</p>
+<div class="wrap">
+<h1 class="hero-title">Your Name</h1>
+<div class="hero-sub">Aspiring Software Engineer Apprentice — building clean, accessible web apps</div>
+</div>
 </header>
 
 
-<div class="container">
+<main>
+<div class="grid">
+<!-- main column -->
+<section class="card">
+<h2>About</h2>
+<p>Short, confident intro (2–3 lines). Example: "I'm a self-taught developer who loves solving problems with JavaScript and Python. Currently learning React and building small projects to practice real-world skills."</p>
 
 
-<section>
-<h2>About Me</h2>
-<p>Write a clean, confident introduction about yourself here. Keep it short and friendly.</p>
-</section>
-
-
-<section>
-<h2>Skills</h2>
-<ul>
-<li>JavaScript</li>
-<li>HTML & CSS</li>
-<li>Python</li>
-<li>Git & GitHub</li>
-</ul>
-</section>
-
-
-<section>
-<h2>Projects</h2>
-<p><strong>Project 1:</strong> <a href="#">GitHub link</a></p>
-<p><strong>Project 2:</strong> <a href="#">GitHub link</a></p>
-</section>
-
-
-<section>
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>GitHub: yourusername</p>
-</section>
-
-
+<h2 style="margin-top:18px">Skills</h2>
+<div class="skills">
+<div class="skill">JavaScript</div>
+<div class="skill">HTML &amp; CSS</div>
+<div class="skill">React</div>
+<div class="skill">Python</div>
+<div class="skill">Git &amp; GitHub</div>
 </div>
 
 
+<h2 style="margin-top:18px">Projects</h2>
+
+
+<article class="project">
+<h3>Project One — To‑Do App</h3>
+<p class="muted">A small React to-do app with local storage and filter features.</p>
+<a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+</article>
+
+
+<article class="project">
+<h3>Project Two — Weather CLI</h3>
+<p class="muted">A tiny Python command-line tool that fetches weather (mock data)</p>
+<a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+</article>
+
+
+</section>
+
+
+<!-- sidebar -->
+<aside class="card">
+<div class="meta">
+<span class="label">Contact</span>
+<p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">yourusername</a></p>
+<p>LinkedIn: <a href="#" target="_blank" rel="noopener">Your LinkedIn</a></p>
+</div>
+
+
+<div style="margin-top:14px">
+<span class="label">Education</span>
+<p class="muted">Your School / Course — dates</p>
+</div>
+
+
+<div style="margin-top:14px">
+<span class="label">Looking for</span>
+<p class="muted">Apprenticeship / Junior developer roles — open to relocation/remote</p>
+</div>
+
+
+<div style="margin-top:14px" class="contact">
+<a href="mailto:your@email.com">Email me</a>
+<a href="https://github.com/yourusername" target="_blank" rel="noopener">View GitHub</a>
+</div>
+</aside>
+</div>
+</main>
+
+
 <footer>
-© 2025 Your Name — Portfolio Site
+© 2025 Your Name — Built with ♥ using GitHub Pages
 </footer>
 </body>
 </html>
