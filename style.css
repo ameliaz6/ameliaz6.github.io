@@ -74,9 +74,10 @@ header h1, header p {
 
 .pfp {
     width: 130px;
-    height: 130px;
-    object-fit: cover;
+    height: 130px;   /* same as width */
+    object-fit: cover; /* crops the image instead of stretching */
     border-radius: 50%;
+}
 }
 
 .profile-info h1 {
