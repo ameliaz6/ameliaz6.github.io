@@ -3,69 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <img src="headshot.jpg" alt="Amelia Zacharska" class="headshot">
 <title>Amelia Zacharska | Portfolio</title>
 <style>
 :root {
---pink-bg: #faf6f8;
---pink-strong: #d57baa;
---text-dark: #5a4a52;
---button-bg: #f9c7e1;
---button-hover: #e7a7c5;
---shadow: 0 8px 20px rgba(0,0,0,0.05);
+  --pink-bg: #faf6f8;
+  --pink-strong: #d57baa;
+  --text-dark: #5a4a52;
+  --button-bg: #f9c7e1;
+  --button-hover: #e7a7c5;
+  --shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
+
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: var(--pink-bg);
-color: var(--text-dark);
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-flex-direction: column;
-text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--pink-bg);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  position: relative; /* for headshot positioning */
 }
+
+/* Headshot in top-right corner */
+.headshot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 3px solid var(--pink-strong);
+  box-shadow: var(--shadow);
+}
+
 h1 {
-font-size: 3rem;
-margin-bottom: 10px;
-color: var(--pink-strong);
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--pink-strong);
 }
+
 p {
-font-size: 1.2rem;
-margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
+
 .button-group {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .button {
-background: var(--button-bg);
-color: var(--text-dark);
-border: none;
-padding: 15px 30px;
-border-radius: 15px;
-font-weight: 600;
-font-size: 1rem;
-cursor: pointer;
-box-shadow: var(--shadow);
-transition: transform 0.2s, background 0.3s;
+  background: var(--button-bg);
+  color: var(--text-dark);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s, background 0.3s;
 }
+
 .button:hover {
-background: var(--button-hover);
-transform: translateY(-3px);
+  background: var(--button-hover);
+  transform: translateY(-3px);
+}
+
+/* Responsive headshot for smaller screens */
+@media (max-width: 500px) {
+  .headshot {
+    width: 70px;
+    height: 70px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
 }
 </style>
 </head>
 <body>
+
+<!-- Headshot image -->
+<img src="headshot.jpg" alt="Amelia Zacharska" class="headshot">
+
 <h1>Amelia Zacharska</h1>
 <p>A-Level Student at Our Lady's Grammar School Newry. Passionate about coding and learning!</p>
+
 <div class="button-group">
   <a href="qualifications.html" class="button">Qualifications</a>
   <a href="experience.html" class="button">Work Experience</a>
   <a href="interests.html" class="button">Interests</a>
 </div>
+
 </body>
 </html>
