@@ -1,3 +1,4 @@
+/* BODY */
 body {
     margin: 0;
     font-family: "Georgia", serif;
@@ -5,29 +6,32 @@ body {
     color: #444;
 }
 
-/* Gradient Banner */
+/* GRADIENT HEADER */
 .top-gradient {
     width: 100%;
-    height: 25vh; /* 1/4 of viewport height */
-    background: url("gradient.jpg") no-repeat center center; /* Replace with your image */
+    height: 180px; /* Keep your previous height */
+    background-image: url("gradient.jpg"); /* Replace with your image */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Profile Card */
+/* PROFILE CARD */
 .profile-card {
     width: 650px;
     background: white;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     border-radius: 15px;
     padding: 30px;
-    margin: -80px auto 40px; /* Slight overlap with gradient */
+    margin: -60px auto 40px; /* Pulls card over gradient slightly */
     display: flex;
     gap: 25px;
     align-items: center;
-    position: relative;
+    position: relative; /* Keeps z-index functional */
     z-index: 1;
 }
 
+/* PROFILE IMAGE */
 .pfp {
     width: 130px;
     height: 130px;
@@ -35,6 +39,7 @@ body {
     border-radius: 50%;
 }
 
+/* PROFILE INFO */
 .profile-info h1 {
     margin: 0;
     font-size: 28px;
@@ -51,7 +56,7 @@ body {
     color: #666;
 }
 
-/* Buttons */
+/* BUTTONS */
 .button-section {
     text-align: center;
     margin-top: 20px;
