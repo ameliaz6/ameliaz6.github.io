@@ -1,3 +1,19 @@
+:root {
+    --pink-bg: #faf6f8;
+    --pink-strong: #d57baa;
+    --text-dark: #5a4a52;
+    --card-bg: #ffffff;
+    --shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+body {
+    margin: 0;
+    font-family: Century Gothic, sans-serif;
+    background: var(--pink-bg);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
 /* Gradient Header */
 .top-gradient {
     width: 100%;
@@ -18,7 +34,7 @@
 }
 
 .top-nav a {
-    color: white;
+    color: white; /* white text */
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -27,4 +43,71 @@
 
 .top-nav a:hover {
     text-decoration: underline;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 650px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    padding: 30px;
+    margin: -60px auto 40px; /* overlaps gradient */
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile Picture */
+.pfp {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Profile Info */
+.profile-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--pink-strong);
+}
+
+.subtitle {
+    margin: 8px 0;
+    color: #555;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 35px;
+    font-size: 0.9rem;
+    color: #7b6d74;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media(max-width:700px){
+    .profile-card{
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .pfp{
+        width: 100px;
+        height: 100px;
+    }
+    .top-nav{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
