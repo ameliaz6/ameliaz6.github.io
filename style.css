@@ -72,15 +72,20 @@ hr {
   background: var(--button-bg);
   color: var(--text-dark);
   border: none;
-  padding: 12px 25px;
-  border-radius: 15px;
+  padding: 18px 35px; /* bigger buttons */
+  border-radius: 20px; /* slightly more rounded */
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem; /* bigger text */
   cursor: pointer;
   box-shadow: var(--shadow);
   text-decoration: none;
   transition: transform 0.2s, background 0.3s;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  transform: translateY(-4px); /* slightly stronger hover effect */
 }
 
 .button:hover {
