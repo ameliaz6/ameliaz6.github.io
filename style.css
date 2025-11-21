@@ -6,11 +6,11 @@ body {
     color: #444;
 }
 
-/* GRADIENT HEADER */
+/* TOP GRADIENT BANNER */
 .top-gradient {
     width: 100%;
-    height: 180px; /* Keep your previous height */
-    background-image: url("gradient.jpg"); /* Replace with your image */
+    height: 25vh; /* 1/4 of viewport height */
+    background-image: url("gradient.jpg"); /* replace with your gradient image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,11 +23,11 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     border-radius: 15px;
     padding: 30px;
-    margin: -60px auto 40px; /* Pulls card over gradient slightly */
+    margin: -80px auto 40px; /* overlaps gradient */
     display: flex;
     gap: 25px;
     align-items: center;
-    position: relative; /* Keeps z-index functional */
+    position: relative;
     z-index: 1;
 }
 
@@ -56,7 +56,7 @@ body {
     color: #666;
 }
 
-/* BUTTONS */
+/* BUTTONS SECTION */
 .button-section {
     text-align: center;
     margin-top: 20px;
@@ -78,4 +78,19 @@ body {
 
 .nav-btn:hover {
     background: #e7a7c5;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 700px) {
+    .profile-card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .pfp {
+        width: 100px;
+        height: 100px;
+    }
 }
