@@ -30,18 +30,17 @@ body {
 /* Top navigation links */
 .top-nav {
     display: flex;
-    gap: 40px;
+    gap: 60px;  /* increased from 40px to 60px for more spacing */
     flex-wrap: wrap;   /* allows wrapping on small screens */
+    justify-content: center; /* keeps links centered */
 }
 
 .top-nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
-    transition: 0.2s;
-}
-
+    font-size: 1.5rem; /* keeps font larger and readable */
+    transition
 .top-nav a:hover {
     text-decoration: underline;
 }
